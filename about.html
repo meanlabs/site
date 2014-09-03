@@ -25,15 +25,6 @@
     margin: 0;
   }
 
-  /*.container {
-    position: fixed !important;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }*/
-
   .container {
     width: 1000px;
     margin: 0 auto;
@@ -45,7 +36,6 @@
   }
 
   .main {
-    /*background-color: #194672;*/
     height: 100vh;
   }
 
@@ -170,10 +160,10 @@
 <div class="main">
   <div class="container">
     <div class="nav-bar">
-      <a href="" style="float: left;"><h4 style="margin: 0; font-weight: 500; border: 2px solid white; padding: 5px;">MEAN LABS</h4></a>
+      <a href="/" style="float: left;"><h4 style="margin: 0; font-weight: 500; border: 2px solid white; padding: 5px;">MEAN LABS</h4></a>
       <div class="nav-items">
-        <a href="/about">About Us</a>
-        <a href="" class="active">Home</a>
+        <a href="/about" class="active">About Us</a>
+        <a href="/">Home</a>
       </div>
     </div>
   </div>
@@ -181,55 +171,19 @@
   <div class="container">
     <div class="hero">
       <div style="min-height: 200px;">
-      <h3>We create elegant tools for developers</h3>
-      <h3>like ourselves that help them build</h3>
-      <h3>better software faster.</h3>
-      <!-- <h3>faster and easier.</h3> -->
-        <!-- <h3>Our products help software teams build modern</h3>
-        <h3>applications faster and smarter</h3> -->
+
+        <h3>Mean Labs is an Australian based</h3>
+        <h3>software development and consultancy company</h3>
+        <p style="margin-top: 50px; color: #dedede; float: left; clear: left; font-size: 20px; font-weight: 300;">
+        We are integration consultants who design and build scalable, distributed systems for organisations. Mean Labs is our vehicle for building elegant tools making modern day application development a more productive and enjoyable experience.</p>
+        <p style="margin-top: 50px; color: #dedede; float: left; clear: left; font-size: 20px; font-weight: 300;">
+        If you'd like to speak to us, we'd love to hear from you: <a href="mailto:hello@meanlabs.io">hello@meanlabs.io</a>
+        </p>
       </div>
-      
     </div>
   </div>
 
   <a class="scroll" href="#more" style="display: inline; bottom: 50px; color: black;"></a>
-</div>
-
-
-<div class="product">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-offset-4 col-md-7" style="margin-top: 80px; text-align: center;">
-        <h2 style="margin: 0; color: #102F4E; text-align: center; font-weight: 700;">Sandbox</h2>
-        <p style="text-align: center; margin: 10px 0 0;">Simplify your testing with mock services hosted in the cloud.</p>
-
-        <a href="https://getsandbox.com"><button type="button" class="btn btn-learn" style="border-width: 1px;">Learn more</button></a>
-      </div>
-
-      <div class="col-md-offset-1 col-md-12" style="margin-top: 80px;">
-        <div class="terminal">
-          <div class="indicators">
-            <span class="circle"></span>
-            <span class="circle"></span>
-            <span class="circle"></span>
-          </div>
-          <div class="terminal-text">
-            <code>
-              <p>mock.define(<span class="txt-r">"</span><span class="txt-g">/users</span><span class="txt-r">"</span>, <span class="txt-r">"</span><span class="txt-g">GET</span><span class="txt-r">"</span>,<span class="txt-o"> function</span>(req, res) {</p>
-              <p class="txt-grey">  // Log request headers to console</p>
-              <p><span class="txt-o">  console</span><span class="txt-g">.log</span>(<span class="txt-r">"</span><span class="txt-g">Request headers: </span><span class="txt-r">"</span>, req.headers);</p>
-              <p class="txt-grey">  // Set response as JSON</p>
-              <p>  res.setHeader(<span class="txt-r">"</span><span class="txt-g">Content-Type</span><span class="txt-r">"</span>,<span class="txt-r"> "</span><span class="txt-g">application/json</span><span class="txt-r">"</span>);</p>
-              <p class="txt-grey">  // Send response</p>
-              <p>  res.render({username: <span class="txt-r">"</span><span class="txt-g">john</span><span class="txt-r">"</span>})</p>
-              <p>})</p>
-            </code>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-  </div>  
 </div>
 
 <footer class="ml-footer" role="footer">
