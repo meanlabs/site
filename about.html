@@ -17,102 +17,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <title>Mean Labs - Software development and consultancy</title>
 
-  <link rel="stylesheet" type="text/css" href="/lib/css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="http://10.101.23.155:8000/lib/css/style.css"/>
 
   <style type="text/css">
 
-  body {
+  body, html {
     background-color: #194672;
     margin: 0;
   }
 
-  .container {
-    width: 1000px;
-    margin: 0 auto;
-    padding: 0;
-  }
-
-  a {
-    text-decoration: none !important;
-  }
-
-  .main {
-    height: 100vh;
-  }
-
-  .scroll {
-    background-image: url(//d4yt8xl9b7in.cloudfront.net/assets/home/scroll-trigger-small-b9f36aa39bd568c2eb7dc4d0c25f2292.png);
-    background-position: right center;
-    background-repeat: no-repeat;
-    color: white;
-    position: absolute;
-    left: 50%;
-    top: 100vh;
-    margin-top: -80px;
-    width: 26px;
-    height: 16px;
-  }
-
-  .nav-bar {
-    margin-top: 20px;
-  }
-
-  .nav-items a {
-    color: rgb(220,220,220);
-    float: right;
-    margin: 7px 10px 0;
-    padding-bottom: 2px;
-  }
-
-  .nav-items a:nth-of-type(1) {
-    margin-right: 0;
-  }
-
-  .nav-items a:hover {
-    border-bottom: 2px solid white;
-    color: white;
-  }
-
-  .nav-items .active {
-    color: white;
-    border-bottom: 2px solid white;
-  }
-
-  .hero {
-    margin-top: 200px;
-  }
-
-  .product {
-    background-color: white;
+  h1, h2, h3, h4 {
     margin: 0;
-    position: relative;;
-  }
-
-  .ml-footer {
-    margin-top: -35px;
-    background-color: #fafbfb;
-    height: 100%;
-    position: relative;
-    border: 1px solid #dddddd;
-  }
-
-  .wrap {
-    padding: 20px;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-    width: 600px;
-    margin: 0 auto;
-  }
-
-  h1 {
-    color: white;
-    font-size: 90px;
-    font-weight: 700;
-    border: 8px solid white;
-    border-radius: 1px;
-    width: 540px;
-    margin: 0 auto;
-    text-align: center;
   }
 
   h4 {
@@ -122,9 +37,65 @@
     text-align: center;
   }
 
-  h3 {
+  a {
+    text-decoration: none !important;
+  }
+
+  .landing-wrapper {
+    margin: 0 20px;
+    height: 100vh;
+  }
+
+  @media all and (min-width: 1040px) {
+    .landing-wrapper { margin: 0 auto; width: 1000px;}
+  }
+
+  .header-wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header-brand h4 {
+    font-weight: 500; 
+    border: 2px solid white; 
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  .header-nav {
+    flex: 1;
+    text-align: right;
+  }
+
+  .header-nav a {
+    color: rgb(220,220,220);
+    float: right;
+    margin: 7px 10px 0;
+    padding-bottom: 2px;
+  }
+
+  .header-nav a:nth-of-type(1) {
+    margin-right: 0;
+  }
+
+  .header-nav a:hover {
+    border-bottom: 2px solid white;
+    color: white;
+  }
+
+  .header-nav .active {
+    color: white;
+    border-bottom: 2px solid white;
+  }
+
+  .hero {
+    margin-top: 200px;
+  }
+
+  .hero h3 {
     float: left;
-    clear: left;
     color: white;
     font-size: 40px;
     margin: 5px 0;
@@ -133,9 +104,98 @@
     padding: 10px;
   }
 
+  .hero p {
+    margin-top: 50px; 
+    color: #dedede; 
+    float: left; 
+    font-size: 20px; 
+    font-weight: 300;
+  }
+
+  @media all and (max-width: 799px){
+    .hero { display: none; }
+  }
+
+  .hero-small {
+    margin-top: 80px;
+    max-width: 460px;
+  }
+
+  @media all and (min-width: 800px) {
+    .hero-small { display: none; }
+  }
+
+  .hero-small span {
+    color: white;
+    font-size: 26px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    padding: 0 7px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    font-weight: 200;
+  }
+
+  .scroll {
+    display: none;
+  }
+
+  @media all and (min-height: 750px) {
+    .scroll {
+      display: block;
+      background-image: url(//d4yt8xl9b7in.cloudfront.net/assets/home/scroll-trigger-small-b9f36aa39bd568c2eb7dc4d0c25f2292.png);
+      background-position: right center;
+      background-repeat: no-repeat;
+      color: white;
+      position: absolute;
+      left: 50%;
+      top: 100vh;
+      margin-top: -80px;
+      width: 26px;
+      height: 16px;
+    }
+  }
+
+  .product-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    padding-top: 80px;
+  }
+
+  .product-desc {
+    flex: 0 1 280px;
+    margin: 0 30px;
+    text-align: center;
+  }
+
+  .product-highlight {
+    margin: 0 30px;
+    flex: 0 1 500px;
+  }
+
+  @media all and (max-width: 799px) {
+    .product-wrapper { flex-direction: column; align-content: center;}
+    .product-desc { flex: 0 1 auto; margin: 0 30px 40px;}
+    .product-highlight { flex: 0; margin: 0 auto; padding: 0 10px; }
+  }
+
+  @media all and (max-width: 430px) {
+    .terminal { height: 240px;}
+    .terminal p { font-size: 11px; }
+  }
+
+  .product-desc h2 {
+    color: #102F4E; 
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
   .btn-learn {
     color: #57AfE6;
     border-color: #57AfE6;
+    border-width: 1px;
     background-color: white; 
     margin-top: 20px;
   }
@@ -144,58 +204,61 @@
     background-color: #57AfE6;
     color: white;
   }
-  
-  .twitter-button {
-    background: url(/lib/img/icon_twitter.png) no-repeat left center;
-    background-size: 14px 14px;
-    /*padding-bottom: 17px!important;*/
-    padding-left: 18px!important;
-    color: black;
+
+  .footer-wrapper {
+    position: relative;
+    margin-top: -25px;
+    padding: 25px;
+    text-align: center;
+    background-color: #fafbfb;
+    border: 1px solid #dddddd;
   }
 
+  .footer-wrapper p {
+     font-size: 12px; 
+     margin: 0 auto;
+     width: 150px;
+  }
+
+  .footer-wrapper .twitter-button {
+    margin: 0 auto;
+    color: black;
+    background: url(/lib/img/icon_twitter.png) no-repeat left center;
+    background-size: 14px 14px;
+    padding-left: 18px!important;
+  }
 </style>
 </head>
 
 <body>
 
-<div class="main">
-  <div class="container">
-    <div class="nav-bar">
-      <a href="/" style="float: left;"><h4 style="margin: 0; font-weight: 500; border: 2px solid white; padding: 5px;">MEAN LABS</h4></a>
-      <div class="nav-items">
-        <a href="/about" class="active">About Us</a>
-        <a href="/">Home</a>
-      </div>
+<div class="landing-wrapper">
+  <div class="header-wrapper">
+    <div class="header-brand">
+      <a href=""><h4>MEAN LABS</h4></a>
+    </div>
+    <div class="header-nav">
+      <a href="/about">About Us</a>
+      <a href="" class="active">Home</a>
     </div>
   </div>
 
-  <div class="container">
-    <div class="hero">
-      <div style="min-height: 200px;">
-
-        <h3>Mean Labs is an Australian based</h3>
-        <h3>software development and consultancy company</h3>
-        <p style="margin-top: 50px; color: #dedede; float: left; clear: left; font-size: 20px; font-weight: 300;">
-        We are integration consultants who design and build scalable, distributed systems for organisations. Mean Labs is our vehicle for building elegant tools making modern day application development a more productive and enjoyable experience.</p>
-        <p style="margin-top: 50px; color: #dedede; float: left; clear: left; font-size: 20px; font-weight: 300;">
-        If you'd like to speak to us, we'd love to hear from you: <a href="mailto:hello@meanlabs.io">hello@meanlabs.io</a>
-        </p>
-      </div>
-    </div>
+  <div class="hero">
+    <h3>Mean Labs is an Australian based</h3>
+    <h3>software development and consultancy company</h3>
+    <p>We are integration consultants who design and build scalable, distributed systems for organisations. Mean Labs is our vehicle for building elegant tools making modern day application development a more productive and enjoyable experience.</p>
+    <p>If you'd like to speak to us, we'd love to hear from you: <a href="mailto:hello@meanlabs.io">hello@meanlabs.io</a>
   </div>
-
-  <a class="scroll" href="#more" style="display: inline; bottom: 50px; color: black;"></a>
+  <div class="hero-small">
+    <span>We create elegant tools for developers like ourselves, helping them build better software faster.</span>
+  </div>
+  <a class="scroll" href="#more"></a>
 </div>
 
-<footer class="ml-footer" role="footer">
-  <div class="container">
-    <div class="row" style="padding: 40px;">
-      <div class="col-md-offset-8 col-md-8" style=" text-align: center;">
-        <p style="font-size: 12px;">&copy; 2016 Mean Labs</p>
-        <a class="twitter-button" href="https://twitter.com/meanlabsio" ></a>
-      </div>
-  </div>
-</footer>
+<div class="footer-wrapper">
+  <p>&copy; 2017 Mean Labs</p>
+  <a class="twitter-button" href="https://twitter.com/meanlabsio"></a>
+</div>
 
 </body>
 
